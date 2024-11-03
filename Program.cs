@@ -14,6 +14,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowSpecificOrigin",
         builder => builder
             .WithOrigins("http://localhost") // Update with your Angular app URL
+            .WithOrigins("https://staging.d2srsxq09d74l7.amplifyapp.com/")
             .AllowAnyHeader()
             .AllowAnyMethod()
             .AllowCredentials());
