@@ -1,0 +1,6 @@
+﻿services:
+  wedding-backend:
+    image: wedding-backend
+    build:
+      context: .
+      dockerfile: Dockerfile
