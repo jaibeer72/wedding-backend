@@ -11,13 +11,11 @@ builder.Services.AddSignalR();
 // Configure CORS
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowSpecificOrigin",
+    options.AddPolicy("AllowAllOrigins",
         builder => builder
-            .WithOrigins("https://staging.d2srsxq09d74l7.amplifyapp.com") // Allow requests from your frontend's origin
             .AllowAnyOrigin()
             .AllowAnyHeader()
-            .AllowAnyMethod()
-            .AllowCredentials());
+            .AllowAnyMethod());
 });
 
 var app = builder.Build();
