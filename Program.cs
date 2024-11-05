@@ -29,7 +29,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseAuthorization();
-app.UseCors("AllowSpecificOrigin"); // Use the CORS policy
+app.UseCors("AllowAllOrigins");
 
 app.MapControllers();
 app.MapHub<NotificationHub>("/notificationHub");
