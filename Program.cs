@@ -14,7 +14,7 @@ builder.Services.AddCors(options =>
     options.AddDefaultPolicy(
         builder =>
         {
-            builder.WithOrigins("http://localhost", "https://wedding-backend-551605752736.us-central1.run.app")
+            builder.WithOrigins("http://localhost", "https://staging.d2srsxq09d74l7.amplifyapp.com")
                 .AllowAnyHeader()
                 .WithMethods("GET", "POST")
                 .AllowCredentials();
